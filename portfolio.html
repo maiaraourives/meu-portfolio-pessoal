@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Compatibilidade com navegadores -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Portfólio</title>
+
+    <script>
+(function () {
+    const tema = localStorage.getItem("tema") || "light";
+
+    if (tema === "dark") {
+        document.documentElement.classList.add("dark");
+    }
+
+    // IMPORTANTE: já define estado do botão ANTES do DOM
+    window.__temaInicial = tema;
+})();
+</script>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Título do site -->
+        <h1 style="color: white; text-align: center;">
+            Portfólio pessoal - Maiara Ourives
+        </h1>
+
+        <!-- Botão de alternar tema -->
+        <button id="toggleTema"></button>
+
+    </header>
+
+    <!-- ================= MENU ================= -->
+    <nav class="container menu">
+        <ul>
+            <!-- Navegação entre páginas -->
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <div class="container wrapper">
+
+        <!-- ===== SIDEBAR (PERFIL) ===== -->
+        <aside class="imagem_maiara">
+
+            <!-- Foto de perfil -->
+            <img src="imagens/maiara-ourives.png" width="200" alt="Foto de Maiara Ourives">
+
+            <!-- Nome -->
+            <h3>Maiara Ourives</h3>
+
+            <!-- Informações básicas -->
+            <div class="infos">
+                <p><strong>Cargo:</strong> Analista de Suporte Júnior II</p>
+                <p><strong>Localização:</strong> Encruzilhada do Sul - RS</p>
+            </div>
+
+        </aside>
+
+        <!-- ===== ÁREA PRINCIPAL ===== -->
+        <section class="principal">
+
+            <!-- Seção de premiações -->
+            <h3>PREMIAÇÕES</h3>
+
+            <ul>
+                <li>
+                    1º Lugar – Prêmio Pesquisador SAPS (Informática)
+                    <br>
+                    Projeto: Jogo de Labirinto para Fundamental I
+                </li>
+
+                <li>
+                    1º Lugar – Prêmio Pesquisador SAPS (Informática)
+                    <br>
+                    Projeto: PEDIAQUIII
+                </li>
+
+                <li>
+                    2º Lugar – XIII Fórum de Iniciação Técnico-Científica da Rede Sinodal
+                    <br>
+                    Projeto: Aplicativo Mobile para Gestores da Saúde
+                </li>
+            </ul>
+
+            <!-- Espaçamento visual -->
+            <br>
+
+            <!-- Seção de projetos / portfólio -->
+            <h3>PORTFÓLIO</h3>
+
+            <ul>
+                <li>
+                    <!-- Link externo para projeto -->
+                    <a href="https://docs.google.com/document/d/12FJjDzLNvoeP5dPoreqgdfQM7IB-DbVjhDjN0Rh35Iw/edit?usp=sharing"
+                        target="_blank">
+                        Jogo de Labirinto para Fundamental I
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://docs.google.com/document/d/1cyRc_-yyvl1ptrvvRPpXufx-TLvkQ6uE-4nljJKiUKA/edit?usp=sharing"
+                        target="_blank">
+                        PEDIAQUIII
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://docs.google.com/document/d/15j225HMp8jm8CPRyU6vCBBRVv18cgAb3vxtzizjSnto/edit?usp=sharing"
+                        target="_blank">
+                        Aplicativo Mobile para Gestores da Saúde
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Maiara Ourives</p>
+
+    </footer>
+
+    <!-- Script principal do projeto -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

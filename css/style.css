@@ -1,0 +1,236 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#toggleTema {
+    width: 140px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   CONTAINER PADRÃO
+========================= */
+.container {
+    width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #4B2E83;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header button {
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 140px;
+    transition:  0.3s; 
+}
+
+/* =========================
+   MENU
+========================= */
+.menu {
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #4B2E83;
+    border-radius: 5px;
+    color: #4B2E83;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #4B2E83;
+    color: white;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.principal {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* =========================
+   IMAGEM / CARD
+========================= */
+.imagem_maiara img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.contato input,
+.contato textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    outline: none;
+    border-color: #4B2E83;
+    box-shadow: 0 0 5px rgba(75, 46, 131, 0.5);
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #4B2E83;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato button:hover {
+    background-color: #3b2366;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #4B2E83;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =========================
+   TEMA ESCURO
+========================= */
+
+.dark {
+    background-color: #0d1117; 
+    color: #c9d1d9;
+}
+
+/* Header e Footer */
+.dark header,
+.dark footer {
+    background-color: #161b22;
+}
+
+/* Menu */
+.dark .menu {
+    background-color: #161b22;
+}
+
+.dark .menu a {
+    color: #c9d1d9;
+    border-color: #30363d;
+}
+
+.dark .menu a:hover {
+    background-color: #30363d;
+    color: #ffffff;
+}
+
+/* Conteúdo */
+.dark .principal {
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+/* Inputs */
+.dark input,
+.dark textarea {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+}
+
+/* Botões */
+.dark button {
+    background-color: #4B2E83;
+    color: #ffffff;
+}
+
+.dark button:hover {
+    background-color: #4B2E83;
+}
+
+/* Links */
+.dark a {
+    color: #58a6ff;
+}
+
+.dark a:hover {
+    color: #79c0ff;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Compatibilidade com navegadores -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Sobre</title>
+
+    <script>
+(function () {
+    const tema = localStorage.getItem("tema") || "light";
+
+    if (tema === "dark") {
+        document.documentElement.classList.add("dark");
+    }
+
+    // IMPORTANTE: já define estado do botão ANTES do DOM
+    window.__temaInicial = tema;
+})();
+</script>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Título do site -->
+        <h1 style="color: white; text-align: center;">
+            Portfólio pessoal - Maiara Ourives
+        </h1>
+
+        <!-- Botão de alternar tema -->
+        <button id="toggleTema"></button>
+
+    </header>
+
+    <!-- ================= MENU ================= -->
+    <nav class="container menu">
+        <ul>
+            <!-- Navegação entre páginas -->
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <div class="container wrapper">
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="imagem_maiara">
+
+            <!-- Foto de perfil -->
+            <img src="imagens/maiara-ourives.png" width="200" alt="Foto de Maiara Ourives">
+
+            <!-- Nome -->
+            <h3>Maiara Ourives</h3>
+
+            <!-- Informações pessoais -->
+            <div class="infos">
+                <p><strong>Cargo:</strong> Analista de Suporte Júnior II</p>
+                <p><strong>Localização:</strong> Encruzilhada do Sul - RS</p>
+            </div>
+
+        </aside>
+
+        <!-- ===== CONTEÚDO SOBRE ===== -->
+        <section class="principal">
+
+            <!-- Título da seção -->
+            <h2>Sobre mim</h2>
+
+            <!-- Descrição pessoal -->
+            <p>
+                Meu nome é Maiara da Silva Ferreira Ourives, tenho 22 anos e resido na cidade de
+                Encruzilhada do Sul, no Rio Grande do Sul. Atualmente, atuo como Analista de Suporte
+                Júnior II, prestando atendimento a clientes e utilizando ferramentas de código aberto,
+                com foco na plataforma MidPoint.
+            </p>
+
+            <!-- Perfil profissional -->
+            <p>
+                No âmbito profissional, busco sempre oferecer soluções de forma ágil e eficiente,
+                sendo reconhecida por minha postura prestativa, organização e criatividade. Apesar
+                de possuir um perfil mais tímido, procuro constantemente evoluir minhas habilidades
+                de comunicação e desempenho no ambiente de trabalho.
+            </p>
+
+            <!-- Desenvolvimento pessoal -->
+            <p>
+                Além da minha atuação profissional, possuo conhecimento no idioma espanhol, o que
+                contribui para meu desenvolvimento pessoal e amplia minhas possibilidades futuras.
+                No tempo livre, gosto de cantar, estudar, viajar com meu esposo e conhecer novos
+                lugares.
+            </p>
+
+            <!-- Interesses e hobbies -->
+            <p>
+                Tenho grande interesse por design gráfico, área na qual desenvolvo trabalhos como
+                hobby, como a criação de cartazes. Também aprecio fotografia e produção de vídeos,
+                atividades que me permitem expressar minha criatividade.
+            </p>
+
+            <!-- Características pessoais -->
+            <p>
+                Valorizo características pessoais que fazem parte da minha identidade, como meus
+                cabelos cacheados, e procuro manter minha autenticidade em diferentes contextos da vida.
+            </p>
+
+            <!-- Objetivos futuros -->
+            <p>
+                Como objetivos futuros, pretendo concluir minha graduação, crescer profissionalmente
+                na área de tecnologia e conquistar oportunidades que me permitam viajar e conhecer
+                diferentes culturas ao redor do mundo.
+            </p>
+
+        </section>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Maiara Ourives</p>
+
+    </footer>
+
+    <!-- Script principal -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Compatibilidade com navegadores -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Contato</title>
+
+   <script>
+(function () {
+    const tema = localStorage.getItem("tema") || "light";
+
+    if (tema === "dark") {
+        document.documentElement.classList.add("dark");
+    }
+
+    // IMPORTANTE: já define estado do botão ANTES do DOM
+    window.__temaInicial = tema;
+})();
+</script>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Título do site -->
+        <h1 style="color: white; text-align: center;">
+            Portfólio pessoal - Maiara Ourives
+        </h1>
+
+        <!-- Botão de alternar tema -->
+        <button id="toggleTema"></button>
+
+    </header>
+
+    <!-- ================= MENU ================= -->
+    <nav class="container menu">
+        <ul>
+            <!-- Navegação entre páginas -->
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <div class="container wrapper">
+
+        <!-- ===== SIDEBAR (PERFIL) ===== -->
+        <aside class="imagem_maiara">
+
+            <!-- Foto de perfil -->
+            <img src="imagens/maiara-ourives.png" width="200" alt="Foto de Maiara Ourives">
+
+            <!-- Nome -->
+            <h3>Maiara Ourives</h3>
+
+            <!-- Informações básicas -->
+            <div class="infos">
+                <p><strong>Cargo:</strong> Analista de Suporte Júnior II</p>
+                <p><strong>Localização:</strong> Encruzilhada do Sul - RS</p>
+            </div>
+
+        </aside>
+
+        <!-- ===== ÁREA DE CONTATO ===== -->
+        <section class="principal contato">
+
+            <!-- Título da seção -->
+            <h2>Contato</h2>
+
+            <!-- Espaçamento visual -->
+            <br>
+
+            <!-- Formulário de contato -->
+            <form id="formContato">
+
+                <!-- Campo nome -->
+                <label>Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+
+                <!-- Campo e-mail -->
+                <label>E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@dominio.com">
+
+                <!-- Campo mensagem -->
+                <label>Mensagem:</label>
+                <textarea id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+
+                <br>
+            </form>
+
+            <!-- Mensagem de status após envio -->
+            <p id="status"></p>
+
+        </section>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Maiara Ourives</p>
+
+    </footer>
+
+    <!-- Script principal do projeto -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

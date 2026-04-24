@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Portfólio - Maiara Ourives</title>
+
+    <!-- Script para aplicar tema antes do carregamento (evita piscar) -->
+    <script>
+        (function () {
+            const tema = localStorage.getItem("tema");
+            if (tema === "dark") {
+                document.documentElement.classList.add("dark");
+            }
+            // já define o texto do botão ANTES de renderizar
+            window.botaoTextoInicial = (tema === "dark") ? "Tema Claro" : "Tema Escuro";
+        })();
+    </script>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Título principal do site -->
+        <h1>Portfólio pessoal - Maiara Ourives</h1>
+
+        <!-- Botão de alternância de tema -->
+        <button id="toggleTema"></button>
+
+    </header>
+
+    <!-- ================= MENU DE NAVEGAÇÃO ================= -->
+    <nav class="container menu">
+        <ul>
+            <!-- Links para navegação entre páginas -->
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <div class="container wrapper">
+
+        <!-- ===== SIDEBAR (PERFIL) ===== -->
+        <aside class="imagem_maiara">
+
+            <!-- Foto de perfil -->
+            <img src="imagens/maiara-ourives.png" width="200" alt="Foto de Maiara Ourives">
+
+            <!-- Nome -->
+            <h3>Maiara Ourives</h3>
+
+            <!-- Informações básicas -->
+            <div class="infos">
+                <p><strong>Cargo:</strong> Analista de Suporte Júnior II</p>
+                <p><strong>Localização:</strong> Rio Grande do Sul - Brasil</p>
+            </div>
+
+        </aside>
+
+        <!-- ===== ÁREA PRINCIPAL ===== -->
+        <section class="principal">
+
+            <!-- Título de boas-vindas -->
+            <h2>Bem-vindo ao meu portfólio</h2>
+
+            <!-- Apresentação inicial -->
+            <p>
+                Olá! Seja bem-vindo(a) ao meu portfólio pessoal. Aqui você encontrará informações
+                sobre minha trajetória profissional, formação acadêmica e projetos desenvolvidos.
+            </p>
+
+            <!-- Descrição profissional -->
+            <p>
+                Atualmente atuo como Analista de Suporte, com foco em soluções tecnológicas e
+                utilização de ferramentas de código aberto. Tenho interesse constante em aprender
+                novas tecnologias e evoluir na área de desenvolvimento e suporte.
+            </p>
+
+            <!-- Orientação para navegação -->
+            <p>
+                Explore as seções do site para conhecer mais sobre minha formação, experiências
+                e trabalhos realizados.
+            </p>
+
+            <!-- Espaçamento visual -->
+            <br>
+
+            <!-- Áreas de interesse -->
+            <h3>Principais áreas de interesse</h3>
+
+            <ul>
+                <li>Suporte e análise de sistemas</li>
+                <li>Desenvolvimento web</li>
+                <li>Design gráfico</li>
+                <li>Tecnologias open source</li>
+            </ul>
+
+        </section>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Maiara Ourives</p>
+
+    </footer>
+
+    <!-- Script principal do projeto -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Compatibilidade com navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Formação</title>
+
+    <script>
+(function () {
+    const tema = localStorage.getItem("tema") || "light";
+
+    if (tema === "dark") {
+        document.documentElement.classList.add("dark");
+    }
+
+    // IMPORTANTE: já define estado do botão ANTES do DOM
+    window.__temaInicial = tema;
+})();
+</script>
+
+    <!-- Importação do CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Título principal do site -->
+        <h1 style="color: white; text-align: center;">
+            Portfólio pessoal - Maiara Ourives
+        </h1>
+
+        <!-- Botão para alternar entre tema claro e escuro -->
+        <button id="toggleTema"></button>
+
+    </header>
+
+    <!-- ================= MENU DE NAVEGAÇÃO ================= -->
+    <nav class="container menu">
+        <ul>
+            <!-- Links para navegação entre páginas -->
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <div class="container wrapper">
+
+        <!-- ===== SIDEBAR (INFORMAÇÕES PESSOAIS) ===== -->
+        <aside class="imagem_maiara">
+
+            <!-- Foto de perfil -->
+            <img src="imagens/maiara-ourives.png" width="200" alt="Foto de Maiara Ourives">
+
+            <!-- Nome -->
+            <h3>Maiara Ourives</h3>
+
+            <!-- Informações adicionais -->
+            <div class="infos">
+                <p><strong>Cargo:</strong> Analista de Suporte Júnior II</p>
+                <p><strong>Localização:</strong> Encruzilhada do Sul - RS</p>
+            </div>
+        </aside>
+
+        <!-- ===== ÁREA PRINCIPAL ===== -->
+        <section class="principal">
+
+            <!-- Formação acadêmica -->
+            <h3>FORMAÇÃO ACADÊMICA</h3>
+
+            <h4>Bacharelado em Ciência da Computação</h4>
+            <p>Uninter – Encruzilhada do Sul</p>
+            <p>Cursando (previsão de conclusão: 2028)</p>
+
+            <h4>Técnico em Informática</h4>
+            <p>Setrem – Três de Maio</p>
+            <p>Concluído em 2023</p>
+
+            <!-- Cursos complementares -->
+            <h3>CURSOS COMPLEMENTARES</h3>
+
+            <p>Operador de Processos Primários de Fabricação – SENAI (2022)</p>
+            <p>Auxiliar Administrativo – MVB Cursos (2021)</p>
+            <p>Word – Clik Informática (2016)</p>
+            <p>Cultivando o Futuro – SETREM / Sicredi (2019)</p>
+
+            <!-- Idiomas -->
+            <h3>IDIOMAS</h3>
+            <p>Espanhol – Intermediário</p>
+
+        </section>
+    </div>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="container">
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Maiara Ourives</p>
+
+    </footer>
+
+    <!-- Importação do JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
