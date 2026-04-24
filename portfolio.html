@@ -15,17 +15,17 @@
     <title>Portfólio</title>
 
     <script>
-(function () {
-    const tema = localStorage.getItem("tema") || "light";
+        (function () {
+            const tema = localStorage.getItem("tema") || "light";
 
-    if (tema === "dark") {
-        document.documentElement.classList.add("dark");
-    }
+            if (tema === "dark") {
+                document.documentElement.classList.add("dark");
+            }
 
-    // IMPORTANTE: já define estado do botão ANTES do DOM
-    window.__temaInicial = tema;
-})();
-</script>
+            // IMPORTANTE: já define estado do botão ANTES do DOM
+            window.__temaInicial = tema;
+        })();
+    </script>
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">

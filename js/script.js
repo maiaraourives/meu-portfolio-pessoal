@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             : "Tema Escuro";
     });
 
-    
-
-
     // ============================================
     // FORMULÁRIO DE CONTATO (APENAS NA PÁGINA CONTATO)
     // ============================================
@@ -57,13 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
             let mensagem = document.getElementById("mensagem").value.trim();
             let status = document.getElementById("status");
 
-            // 🔹 Validação: campos obrigatórios
+            // Validação: campos obrigatórios
             if (nome === "" || email === "" || mensagem === "") {
                 alert("Por favor, preencha todos os campos!");
                 return;
             }
 
-            // 🔹 Validação: formato de e-mail
+            // Validação: formato de e-mail
             let emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (!emailValido.test(email)) {
@@ -71,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // 🔹 Simulação de envio
+            // Simulação de envio
             alert("Mensagem enviada com sucesso!");
 
             // Limpa o formulário
